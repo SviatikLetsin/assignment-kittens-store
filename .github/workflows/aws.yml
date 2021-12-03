@@ -36,7 +36,7 @@ env:
   ECR_REPOSITORY: kittens-store-app           # set this to your Amazon ECR repository name
   ECS_SERVICE: web-page-kittens                # set this to your Amazon ECS service name
   ECS_CLUSTER: github-kittens-cluster                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: taskdefinition.json # set this to the path to your Amazon ECS task definition
+  ECS_TASK_DEFINITION: taskdefenition.json # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: kitten-container           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
