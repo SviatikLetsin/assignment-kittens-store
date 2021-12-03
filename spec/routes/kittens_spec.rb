@@ -14,7 +14,7 @@ RSpec.describe KittensStore::Routes::Kittens do
 
     context 'with kittens' do
       it 'shows correct count' do
-        expect(app_response).to include('4 kittens')
+        expect(app_response).to include('3 kittens')
       end
     end
   end
