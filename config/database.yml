@@ -5,12 +5,21 @@ pg: &pg
 
 development:
   <<: *pg
-  database: kittens_store_dev
+  database: kittensStore
+  host: kittensstore.cywnmrcl4f2s.us-east-1.rds.amazonaws.com
+  username: sviat
+  password: colloboration28
 
 test:
   <<: *pg
-  database: kittens_store_test
+  database: kittensStore
+  host: kittensstore.cywnmrcl4f2s.us-east-1.rds.amazonaws.com
+  username: sviat
+  password: colloboration28
 
 production:
   <<: *pg
-  database: kittens_store
+  database: kittensStore
+  host: kittensstore.cywnmrcl4f2s.us-east-1.rds.amazonaws.com
+  username: sviat
+  password: colloboration28
