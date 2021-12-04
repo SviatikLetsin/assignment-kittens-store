@@ -9,27 +9,17 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/first-run-task-definition",
+          "awslogs-group": "/ecs/testing-task",
           "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "ecs"
         }
       },
-      "entryPoint": null,
-      "portMappings": [
-        {
-          "hostPort": 4567,
-          "protocol": "tcp",
-          "containerPort": 4567
-        }
-      ],
+      "entryPoint": [],
+      "portMappings": [],
       "command": [
         "bundle",
         "exec",
-        "rackup",
-        "--host",
-        "0.0.0.0",
-        "--port",
-        "4567"
+        "rspec"
       ],
       "linuxParameters": null,
       "cpu": 0,
@@ -45,7 +35,7 @@
       "memoryReservation": 128,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "865766413317.dkr.ecr.us-east-1.amazonaws.com/kittens-store-app-private:b094e28dc6e3855e223986957ba9f0af906ecf35",
+      "image": "865766413317.dkr.ecr.us-east-1.amazonaws.com/fortests:8ced198d76b65469fd7a233284dafda20f4d3cb8",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -53,7 +43,7 @@
       "interactive": null,
       "healthCheck": null,
       "essential": true,
-      "links": null,
+      "links": [],
       "hostname": null,
       "extraHosts": null,
       "pseudoTerminal": null,
@@ -62,7 +52,7 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "kittens-application"
+      "name": "automated-tests"
     }
   ],
   "placementConstraints": [],
@@ -72,8 +62,8 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:865766413317:task-definition/first-run-task-definition:16",
-  "family": "first-run-task-definition",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:865766413317:task-definition/testing-task:1",
+  "family": "testing-task",
   "requiresAttributes": [
     {
       "targetId": null,
@@ -131,7 +121,7 @@
   "networkMode": "awsvpc",
   "runtimePlatform": null,
   "cpu": "256",
-  "revision": 16,
+  "revision": 1,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
