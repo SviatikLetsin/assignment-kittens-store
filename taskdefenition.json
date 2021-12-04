@@ -22,7 +22,9 @@
           "containerPort": 4567
         }
       ],
-      "command": [],
+      "command": [
+        "bundle exec rackup --port 4567 --host 0.0.0.0"
+      ],
       "linuxParameters": null,
       "cpu": 0,
       "environment": [],
@@ -37,7 +39,7 @@
       "memoryReservation": 128,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "865766413317.dkr.ecr.us-east-1.amazonaws.com/kittens-store-app-private:71c9b2aaa41f97b8a3d00fdb0b7ef446a05665b2",
+      "image": "865766413317.dkr.ecr.us-east-1.amazonaws.com/kittens-store-app-private",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -54,7 +56,7 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "custom"
+      "name": "application"
     }
   ],
   "placementConstraints": [],
@@ -64,7 +66,7 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:865766413317:task-definition/first-run-task-definition:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:865766413317:task-definition/first-run-task-definition:6",
   "family": "first-run-task-definition",
   "requiresAttributes": [
     {
@@ -123,7 +125,7 @@
   "networkMode": "awsvpc",
   "runtimePlatform": null,
   "cpu": "256",
-  "revision": 1,
+  "revision": 6,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
