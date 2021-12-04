@@ -8,3 +8,5 @@ RUN bundle install
 RUN bundle exec rake db:create
 RUN bundle exec rake db:migrate
 RUN bundle exec rake db:seed
+
+EXPOSE 4567
