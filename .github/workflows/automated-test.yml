@@ -33,7 +33,7 @@ on:
 
 env:
   AWS_REGION: us-east-1                   # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: fortests           # set this to your Amazon ECR repository name
+  ECR_REPOSITORY: kittens-store-app-private           # set this to your Amazon ECR repository name
   ECS_SERVICE: automated_test-service                # set this to your Amazon ECS service name
   ECS_CLUSTER: automatedtests               # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: testtask.json # set this to the path to your Amazon ECS task definition
