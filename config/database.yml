@@ -7,19 +7,14 @@ development:
   <<: *pg
   database: kittensStore
   host: kittensstore.cywnmrcl4f2s.us-east-1.rds.amazonaws.com
-  username: sviat
-  password: colloboration28
+
 
 test:
   <<: *pg
   database: kittensStore
   host: kittensstore.cywnmrcl4f2s.us-east-1.rds.amazonaws.com
-  username: sviat
-  password: colloboration28
 
 production:
   <<: *pg
   database: kittensStore
   host: kittensstore.cywnmrcl4f2s.us-east-1.rds.amazonaws.com
-  username: sviat
-  password: colloboration28
